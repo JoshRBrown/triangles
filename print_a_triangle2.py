@@ -1,6 +1,6 @@
 height = int(input('Give me the triangle\'s height. '))
 star = '*'
-new_star = '**'
+line = '*'
 count = 0
 width = 0
 
@@ -11,6 +11,6 @@ while count < height:
 count = 0
 
 while count < height:
-    print(star.center(width), ' ')
+    print(line.center(width), ' ')
     count = count + 1
-    star = star + new_star
+    line = line + star * 2
